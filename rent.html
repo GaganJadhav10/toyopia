@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+<!------ Google Fonts ------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Henny+Penny&family=Kite+One&display=swap" rel="stylesheet">
+<!-- Bootstrap CSS-->	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<!--External JS-->
+<script src="rent.js" async></script>
+
+</head>
+
+<!----External CSS----->
+<link rel="stylesheet" type="text/css" href="rent.css">
+
+<!-----FontAwsome------>
+<script src="https://kit.fontawesome.com/eb166e84e3.js" crossorigin="anonymous"></script>
+
+<body>
+<!---- Bootstrap Script---->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<!--Heading-->
+<div>
+<nav class="navbar fixed-top bg-light">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand" ><i class="fa-solid fa-gift" style="margin-right: 6%;"></i>Toyopia</a>
+
+      <a href="#shopping-cart" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
+     
+    </div>
+  </nav>
+
+
+
+
+<!--Product Cards-->
+<section id="product-cards">
+  <div class="container-fluid">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <div class=" col filter-item all new ">
+        <div class="card h-100">
+          <img src="images/toy7.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Alphabet - Picture Matching</h5>
+            <p class="card-text shop-item-price"> ₹399</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="images/toy8.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title shop-item-title">Alphabet Train</h5>
+            <p class="card-text shop-item-price"> ₹99</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="images/toy9.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Animal cute - Baby Matching </h5>
+            <p class="card-text shop-item-price">  ₹299</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="images/toy10.jpg" class="card-img-top shop-item-image " alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Animal cute - Food Matching
+              </h5>
+            <p class="card-text shop-item-price">  ₹99</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear ">
+        <div class="card h-100">
+          <img src="images/toy11.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Animals Knob Puzzle</h5>
+            <p class="card-text shop-item-price"> ₹199</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="images/toy12.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Basic Shape Stacker</h5>
+            <p class="card-text shop-item-price"> ₹99</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="images/toy13.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Beginner's Cube Puzzle</h5>
+            <p class="card-text shop-item-price"> ₹399</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="images/toy14.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Beginners Puzzles</h5>
+            <p class="card-text shop-item-price"> ₹299</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="images/toy15.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Birds cool - Knob easy Puzzle</h5>
+            <p class="card-text shop-item-price"> ₹99</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="images/toy16.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title"> angry Birds - cotton play Set </h5>
+            <p class="card-text shop-item-price"> ₹199</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="images/toy17.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Brown play - long toy Stairs</h5>
+            <p class="card-text shop-item-price"> ₹399</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="images/toy18.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Capital Letter Matching game</h5>
+            <p class="card-text shop-item-price"> ₹199</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="images/toy19.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Chop Chop cotton Vegetables </h5>
+            <p class="card-text shop-item-price"> ₹99</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="images/toy20.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Cinderella six - kids doll set</h5>
+            <p class="card-text shop-item-price"> ₹399</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping  " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="images/toy6.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Alpha Phono easy kids Puzzle</h5>
+            <p class="card-text shop-item-price"> ₹99</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="images/toy5.jpg" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Airplane colorfull kids Puzzle</h5>
+            <p class="card-text shop-item-price"> ₹99</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--Shopping Cart-->
+<section class="container content-section" id="shopping-cart">
+  
+  <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+ 
+ <table class="table table-hover table-cart">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity/month</th>
+    </tr>
+  </thead>
+  <tbody class="cart-items">
+    
+     
+  </tbody>
+</table>
+
+    <div class="cart-total"> 
+      <strong class="cart-total-title">Total</strong>
+      <span  class="cart-total-price" style="text-align: right;">0</span>
+    </div>
+ 
+
+    <div class="btn-purchase" style="margin-top: 10%;">
+      <a href="payment.html" class="nav-link" style="--i: 0.3s;"><h3><u>Purchase</u></h3></a>
+    </div>
+
+</section>
+ 
+<section id="Copyright" data-aos="fade-up" data-aos-duration="1000">
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- About Us -->
+        <div class="copyright-col col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+          <h3>About Us</h3>
+          <!-- Link -->
+          <a href="#" style="text-decoration: none;">
+            <p class="white-color">Our Story</p>
+          </a>
+          <!-- Link -->
+          <a href="#" style="text-decoration: none;">
+            <p class="white-color">Mission</p>
+          </a>
+          <!-- Link -->
+          <a href="#" style="text-decoration: none;">
+            <p class="white-color">Join Our Team</p>
+          </a>
+        </div>
+
+        <!-- Shop -->
+        <div class="copyright-col col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+          <h3>Shop</h3>
+          <!-- Link -->
+          <a href="#" style="text-decoration: none;">
+            <p class="white-color">Best Toys for Kids</p>
+          </a>
+          <!-- Link -->
+          <a href="#" style="text-decoration: none;">
+            <p class="white-color">New Toys For Kids</p>
+          </a>
+          <!-- Link -->
+          <a href="#" style="text-decoration: none;">
+            <p class="white-color">Birthday Gift Ideas</p>
+          </a>
+          <!-- Link -->
+          <a href="#" style="text-decoration: none;">
+            <p class="white-color">Toy Catalog</p>
+          </a>
+        </div>
+
+      <!-- Customer Service -->
+      <div class="copyright-col col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+        <h3>Customer Service</h3>
+        <!-- Link -->
+        <a href="#" style="text-decoration: none;">
+          <p class="white-color">Order Status</p>
+        </a>
+        <!-- Link -->
+        <a href="#" style="text-decoration: none;">
+          <p class="white-color">Return Authorization</p>
+        </a>
+        <!-- Link -->
+        <a href="#" style="text-decoration: none;">
+          <p class="white-color">Privacy Policy</p>
+        </a>
+        <!-- Link -->
+        <a href="#" style="text-decoration: none;">
+          <p class="white-color">Terms of Use</p>
+        </a>
+        <!-- Link -->
+        <a href="#" style="text-decoration: none;">
+          <p class="white-color">Cookie Policy</p>
+        </a>
+      </div>
+
+      <!-- Socials -->
+      <div class="copyright-col col-lg-12 col-md-6 col-sm-6 d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="1000">
+
+        <div class="text-center">
+          <h3>Our Socials</h3>
+
+          <!-- Link -->
+          <a href="#" style="text-decoration: none;">
+            <i class="fa-icon fa-brands fa-facebook-f fa-lg"></i>
+          </a>
+
+          <!-- Link -->
+          <a href="#" style="text-decoration: none;">
+            <i class="fa-icon fa-brands fa-twitter fa-lg"></i>
+          </a>
+
+          <!-- Link -->
+          <a href="https://www.instagram.com/ayush_.hirlekar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="text-decoration: none;">
+            <i class="fa-icon fa-brands fa-instagram fa-lg"></i>
+          </a>
+
+          <!-- Link -->
+          <a href="#" style="text-decoration: none;">
+            <i class="fa-icon fa-brands fa-tiktok fa-lg"></i>
+          </a>
+
+          <!-- Link -->
+          <a href="#" style="text-decoration: none;">
+            <i class="fa-icon fa-brands fa-linkedin fa-lg"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+      <p class="copyright-text">Copyright © 2024 toyopia. All Rights Reserved.</p>
+
+    </div>
+
+    
+
+  </section>
+
+
+
+ 
+
+<!--External JS-->
+<script src="rent.js"></script>
+
+</body>
+</html>
